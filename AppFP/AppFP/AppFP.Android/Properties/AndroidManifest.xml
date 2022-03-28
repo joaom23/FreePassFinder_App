@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.appfp" android:installLocation="internalOnly">
+	<uses-sdk android:minSdkVersion="20" android:targetSdkVersion="30" />
+	<application android:label="AppFP.Android" android:theme="@style/MainTheme" android:allowBackup="false" android:usesCleartextTraffic="true" android:icon="@mipmap/icon">
+		<meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyBnbriwJSwfKjdCQzp3fgB9Depiqs36LPE" />
+	</application>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+</manifest>

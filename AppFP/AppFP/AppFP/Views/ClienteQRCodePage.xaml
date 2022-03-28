@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppFP.Views.ClienteQRCodePage"
+             xmlns:zxing ="clr-namespace:ZXing.Net.Mobile.Forms;assembly=ZXing.Net.Mobile.Forms" 
+             xmlns:zxingcommon="clr-namespace:ZXing.Common;assembly=zxing.portable"
+             Title="Seu QR Code">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <!--<Frame BackgroundColor="#ffa63a" Padding="10" CornerRadius="0">
+                <Label Text="O seu QR Code" VerticalOptions="Start" VerticalTextAlignment="Start" HorizontalTextAlignment="Center" TextColor="White" FontSize="35"></Label>
+            </Frame>-->
+            <!--<Label Text="{Binding UserId}"></Label>-->
+            <zxing:ZXingBarcodeImageView BarcodeValue="{Binding UserId}" WidthRequest="500" HeightRequest="500">
+                <zxing:ZXingBarcodeImageView.BarcodeOptions>
+                <zxingcommon:EncodingOptions Height="500" Width="500"/>
+                </zxing:ZXingBarcodeImageView.BarcodeOptions>
+            </zxing:ZXingBarcodeImageView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

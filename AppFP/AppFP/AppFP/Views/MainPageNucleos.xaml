@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppFP.MainPageNucleos"
+             Title="Free Pass Finder - Nucleos"
+             >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <Label x:Name="bemvindo" Grid.Row="1" Text="Bem-vindo " TextColor="#ffa63a" FontSize="25" HorizontalOptions="Center"/>
+
+        <Label Grid.Row="2" Text="Sua informação para os clientes:" TextColor="black" FontSize="20" HorizontalOptions="Start" VerticalOptions="End"/>
+        <Label Grid.Row="3" Text="{Binding Info}" TextColor="#ffa63a" FontSize="20" HorizontalOptions="Center"/>
+        
+        <Entry Grid.Row="4" Text ="{Binding Information, Mode=TwoWay}" Placeholder="Atualizar Informação" Keyboard="Email" />
+
+        <Button Grid.Row="5" Text="Enviar" Command="{Binding AddInformationCommnad}" BackgroundColor="#ffa63a" TextColor="White"/>
+
+
+    </Grid>
+</ContentPage>
